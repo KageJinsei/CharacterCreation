@@ -32,27 +32,37 @@ func racas() {
 		"|3| Fada\n" +
 		"|4| Besta\n" +
 		"|5| Vagante\n")
-	fmt.Print("Qual raça deseja?: => ")
+	
+  for { 
+    fmt.Print("Qual raça deseja?: => ")
 
-	scanner := bufio.NewScanner(os.Stdin)
+	  scanner := bufio.NewScanner(os.Stdin)
 
-	if scanner.Scan() {
+	  if scanner.Scan() {
 
-		input := scanner.Text()
+		  input := scanner.Text()
 
-		switch input {
-		case "1":
-			raca = "Humano"
-		case "2":
-			raca = "Elfo"
-		case "3":
-			raca = "Fada"
-		case "4":
-			raca = "Besta"
-		case "5":
-			raca = "Vagante"
-		}
-	}
+		  switch input {
+		  case "1":
+			  raca = "Humano"
+        return
+		  case "2":
+			  raca = "Elfo"
+        return
+		  case "3":
+			  raca = "Fada"
+        return
+		  case "4":
+			  raca = "Besta"
+        return
+		  case "5":
+			  raca = "Vagante"
+        return
+      default:
+        fmt.Println("Raça Inválida! Escolha uma das opções listadas.")
+		  }
+	  }
+  }
 }
 
 func classes() {
@@ -62,7 +72,9 @@ func classes() {
 		"|3| Arqueiro\n" +
 		"|4| Noviço\n" +
 		"|5| Assassino\n")
-	fmt.Print("Qual classe deseja?: => ")
+	
+  for {
+  fmt.Print("Qual classe deseja?: => ")
 
 	scanner := bufio.NewScanner(os.Stdin)
 
@@ -73,15 +85,23 @@ func classes() {
 		switch input {
 		case "1":
 			classe = "Guerreiro"
+      return
 		case "2":
 			classe = "Mago"
+      return
 		case "3":
 			classe = "Arqueiro"
+      return
 		case "4":
 			classe = "Noviço"
-		case "5":
+		  return
+    case "5":
 			classe = "Assassino"
-		}
+      return
+    default:
+      fmt.Println("Classe Inválida! Selecione uma das opções listadas.")
+		  }
+    }
 	}
 }
 
@@ -92,7 +112,9 @@ func locais() {
 		"|3| Carsterly Rock\n" +
 		"|4| Storm's End\n" +
 		"|5| Red Keep\n")
-	fmt.Print("Qual local deseja?: => ")
+	
+  for {
+  fmt.Print("Qual local deseja?: => ")
 
 	scanner := bufio.NewScanner(os.Stdin)
 
@@ -103,15 +125,23 @@ func locais() {
 		switch input {
 		case "1":
 			local = "Winterfell"
+      return
 		case "2":
 			local = "Highgarden"
+      return
 		case "3":
 			local = "Casterly Rock"
+      return
 		case "4":
 			local = "Storm's End"
+      return
 		case "5":
 			local = "Red Keep"
-		}
+      return
+    default:
+      fmt.Println("Local Inválido! Selecione uma das opções listadas.")
+		  }
+    }
 	}
 }
 
