@@ -75,7 +75,8 @@ func classes() {
 		        "|2| Mago\n" +
 		        "|3| Arqueiro\n" +
 		        "|4| Noviço\n" +
-		        "|5| Assassino\n")
+		        "|5| Assassino\n" +
+            "|0| Voltar\n")
 	
   for {
     fmt.Print("Qual classe deseja?: => ")
@@ -111,6 +112,10 @@ func classes() {
 			  classe = "Assassino"
         borda()
         regioes()
+        return
+      case "0":
+        borda()
+        racas()
         return
       default:
         fmt.Println("Classe Inválida! Selecione uma das opções listadas.")
