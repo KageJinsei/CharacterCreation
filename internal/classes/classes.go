@@ -16,7 +16,10 @@ func Classes() {
 		"|3| Arqueiro\n" +
 		"|4| Noviço\n" +
 		"|5| Assassino\n" +
-		"|0| Voltar\n")
+		"|6| Druida\n" +
+    "|7| Paladino\n" +
+    "|8| Necromante\n" +
+    "|9| Monge\n")
 
 	for {
 		fmt.Print("Qual classe deseja?: => ")
@@ -50,6 +53,26 @@ func Classes() {
 				return
 			case "5":
 				global.Classe = "Assassino"
+				border.Borda()
+				regions.Regioes()
+				return
+      case "6":
+				global.Classe = "Druida"
+				border.Borda()
+				regions.Regioes()
+				return
+      case "7":
+				global.Classe = "Paladino"
+				border.Borda()
+				regions.Regioes()
+				return
+      case "8":
+				global.Classe = "Necromante"
+				border.Borda()
+				regions.Regioes()
+				return
+      case "9":
+				global.Classe = "Monge"
 				border.Borda()
 				regions.Regioes()
 				return
