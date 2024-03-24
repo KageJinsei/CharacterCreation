@@ -49,7 +49,7 @@ func LocaisWesteros() {
 				token.Ficha()
 				return
 			case "5":
-				global.Local = "Red Keep"
+				global.Local = "Riverrun"
 				border.Borda()
 				token.Ficha()
 				return

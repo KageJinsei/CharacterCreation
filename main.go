@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	fmt.Println("RPG - IMAGINA UM NOME LEGAL AQUI!")
+	fmt.Println("\nRPG - CHARACTER CREATION")
 
 	border.Borda()
 	races.Racas()
