@@ -3,10 +3,11 @@ package locations
 import (
 	"bufio"
 	"fmt"
+	"os"
+
+	"github.com/KageJinsei/CharacterCreation/internal/beliefs"
 	"github.com/KageJinsei/CharacterCreation/internal/border"
 	"github.com/KageJinsei/CharacterCreation/internal/global"
-	"github.com/KageJinsei/CharacterCreation/internal/token"
-	"os"
 )
 
 func LocaisWesteros() {
@@ -15,8 +16,7 @@ func LocaisWesteros() {
 		"|2| Highgarden\n" +
 		"|3| Carsterly Rock\n" +
 		"|4| Storm's End\n" +
-		"|5| Riverrun\n" +
-		"|0| Voltar\n")
+		"|5| Riverrun\n")
 
 	for {
 		fmt.Print("Qual local deseja?: => ")
@@ -31,27 +31,27 @@ func LocaisWesteros() {
 			case "1":
 				global.Local = "Winterfell"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "2":
 				global.Local = "Highgarden"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "3":
 				global.Local = "Casterly Rock"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "4":
 				global.Local = "Storm's End"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "5":
 				global.Local = "Riverrun"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			default:
 				fmt.Println("Local Inválido! Selecione uma das opções listadas.")
@@ -82,27 +82,27 @@ func LocaisEssos() {
 			case "1":
 				global.Local = "Braavos"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "2":
 				global.Local = "Pentos"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "3":
 				global.Local = "Volantis"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "4":
 				global.Local = "Meereen"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "5":
 				global.Local = "Astapor"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			default:
 				fmt.Println("Local Inválido! Selecione uma das opções listadas.")
@@ -133,27 +133,27 @@ func LocaisMarEstreito() {
 			case "1":
 				global.Local = "Asshai"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "2":
 				global.Local = "Shadow Lands"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "3":
 				global.Local = "Yi Ti"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "4":
 				global.Local = "Naath"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "5":
 				global.Local = "Valyria Peninsula"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			default:
 				fmt.Println("Local Inválido! Selecione uma das opções listadas.")
@@ -184,27 +184,27 @@ func LocaisAlemMuralha() {
 			case "1":
 				global.Local = "Castle Black"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "2":
 				global.Local = "Craster's Keep"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "3":
 				global.Local = "Hardhome"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "4":
 				global.Local = "Heart Tree"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			case "5":
 				global.Local = "Kingsroad"
 				border.Borda()
-				token.Ficha()
+				beliefs.Religioes()
 				return
 			default:
 				fmt.Println("Local Inválido! Selecione uma das opções listadas.")

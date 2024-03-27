@@ -3,10 +3,11 @@ package races
 import (
 	"bufio"
 	"fmt"
+  "os"
+
 	"github.com/KageJinsei/CharacterCreation/internal/border"
 	"github.com/KageJinsei/CharacterCreation/internal/classes"
 	"github.com/KageJinsei/CharacterCreation/internal/global"
-	"os"
 )
 
 func Racas() {

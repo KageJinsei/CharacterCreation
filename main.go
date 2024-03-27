@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/KageJinsei/CharacterCreation/internal/border"
 	"github.com/KageJinsei/CharacterCreation/internal/races"
 )

@@ -3,10 +3,11 @@ package classes
 import (
 	"bufio"
 	"fmt"
+  "os"
+
 	"github.com/KageJinsei/CharacterCreation/internal/border"
 	"github.com/KageJinsei/CharacterCreation/internal/global"
 	"github.com/KageJinsei/CharacterCreation/internal/regions"
-	"os"
 )
 
 func Classes() {

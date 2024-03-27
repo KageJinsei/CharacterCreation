@@ -3,10 +3,11 @@ package regions
 import (
 	"bufio"
 	"fmt"
+  "os"
+
 	"github.com/KageJinsei/CharacterCreation/internal/border"
 	"github.com/KageJinsei/CharacterCreation/internal/global"
 	"github.com/KageJinsei/CharacterCreation/internal/locations"
-	"os"
 )
 
 func Regioes() {
@@ -14,8 +15,7 @@ func Regioes() {
 	fmt.Print("|1| Westeros\n" +
 		"|2| Essos\n" +
 		"|3| Além do Mar Estreiro\n" +
-		"|4| Além da Muralha\n" +
-		"|0| Voltar\n")
+		"|4| Além da Muralha\n")
 
 	for {
 		fmt.Print("Qual região deseja?: => ")
